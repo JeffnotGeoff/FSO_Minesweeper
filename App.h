@@ -1,7 +1,14 @@
 #pragma once
 #include "wx/wx.h"
 
-class App
+class Window;
+
+class App : public wxApp
 {
+
+	Window* window = nullptr;
+
+public:
+	virtual bool OnInit();
 };
 
